@@ -1,0 +1,35 @@
+body {
+    text-align:center ;
+}
+
+.list{
+    text-shadow:2px 2px 8px red;
+    text-decoration:underline wavy blue;
+    font-style:oblique ;
+    
+}
+
+.btn{
+    background-color:orange;
+    border-radius:10px;
+    margin:5px;
+    padding:5px;
+}
+
+#todo{
+    background-color:yellow;
+    border:3px solid red;
+    border-radius:20px 0px;
+    padding-left:10px;
+    text-align:center ;
+    border-left-color:blue;
+    border-right-color:blue;
+    border-bottom-style:double;
+    border-top-style: double ;
+    border-left-style:dotted ;
+    border-right-style:dotted ;
+}
+
+li{
+    text-align:left:;
+}
