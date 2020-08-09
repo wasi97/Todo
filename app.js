@@ -1,4 +1,5 @@
 var list = document.getElementById("ul")
+// add task in list
 function add(){
 var item = document.getElementById ("todo")
 if(item.value === ""){
@@ -9,23 +10,29 @@ if(item.value === ""){
 var liText = document.createTextNode(todo.value)    
     li.appendChild(liText)
     // delete button
+    
     var delBtn = document.createElement("button")
     var delText = document.createTextNode("Delete")
-    delBtn.setAttribute("class","btn")
+    delBtn.classList.add("btn")
+    delBtn.classList.add("right")
     delBtn.setAttribute("onclick","del(this)")
     delBtn.appendChild (delText)
     li.appendChild(delBtn)
     // edit button
     var editBtn = document.createElement("button")
     var editText = document.createTextNode("Edit")
-    editBtn.setAttribute("class","btn")
+    editBtn.classList.add("btn")
+    editBtn.classList.add("right")
     editBtn.setAttribute("onclick","edit(this)")
     editBtn.appendChild (editText)
     li.appendChild(editBtn)
     
     
     list.appendChild(li)
+    
     todo.value = ""
+    addbtn.classList.remove("hide")
+    todoDiv.classList.add("hide")
     }
     
 }
@@ -33,6 +40,7 @@ var liText = document.createTextNode(todo.value)
 function del(w){
 
 w.parentNode.remove()
+
     
 }
 
@@ -48,4 +56,11 @@ function delAll(){
     alert("ToDo list is empty")
     }
     list.innerHTML =""
+}
+// add new task
+var addbtn = document.getElementById("add")
+var todoDiv = document.getElementById("todoDiv")
+function addDiv(){
+addbtn.classList.add("hide")
+todoDiv.classList.remove("hide")
 }

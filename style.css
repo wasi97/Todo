@@ -14,9 +14,12 @@ body {
     border-radius:10px;
     margin:5px;
     padding:5px;
+    
 }
 
 #todo{
+    width: 250px;
+    height: 30px;
     background-color:yellow;
     border:3px solid red;
     border-radius:20px 0px;
@@ -29,7 +32,22 @@ body {
     border-left-style:dotted ;
     border-right-style:dotted ;
 }
-
+ul{
+    list-style: none;
+}
 li{
-    text-align:left:;
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-style: oblique;
+    font-family: fantasy;
+    text-shadow: rebeccapurple 2px 2px 5px;
+    text-align:center;
+    height: 40px;
+    border: 2px solid red;
+
+}
+.right{
+    float: right;
+}.hide{
+    display: none;
 }
